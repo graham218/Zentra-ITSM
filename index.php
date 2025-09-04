@@ -3,32 +3,31 @@
 /**
  * ---------------------------------------------------------------------
  *
- * GLPI - Gestionnaire Libre de Parc Informatique
+ * Zentra - IT Asset & Service Management System
  *
- * http://glpi-project.org
+ * http://zentra-project.org
  *
- * @copyright 2015-2025 Teclib' and contributors.
- * @copyright 2003-2014 by the INDEPNET Development Team.
+ * @copyright 2025 Zentra and contributors.
  * @licence   https://www.gnu.org/licenses/gpl-3.0.html
  *
  * ---------------------------------------------------------------------
  *
  * LICENSE
  *
- * This file is part of GLPI.
+ * This file is part of Zentra, a customized distribution of GLPI.
  *
- * This program is free software: you can redistribute it and/or modify
+ * Zentra is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful,
+ * Zentra is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
  *
  * ---------------------------------------------------------------------
  */
@@ -46,7 +45,7 @@ use Glpi\Application\View\TemplateRenderer;
 use Glpi\Plugin\Hooks;
 use Glpi\Toolbox\Sanitizer;
 
-//Load GLPI constants
+//Load Zentra constants
 define('GLPI_ROOT', __DIR__);
 include(GLPI_ROOT . "/inc/based_config.php");
 
@@ -63,7 +62,7 @@ if (!file_exists(GLPI_CONFIG_DIR . "/config_db.php")) {
         $_SESSION['glpi_use_mode'] = Session::NORMAL_MODE;
 
         // no translation
-        $title_text        = 'GLPI seems to not be configured properly.';
+        $title_text        = 'Zentra seems to not be configured properly.';
         $missing_conf_text = sprintf('Database configuration file "%s" is missing.', GLPI_CONFIG_DIR . '/config_db.php');
         $hint_text         = 'You have to either restart the install process, either restore this file.';
 
@@ -87,7 +86,7 @@ if (!file_exists(GLPI_CONFIG_DIR . "/config_db.php")) {
     include(GLPI_ROOT . "/inc/includes.php");
     $_SESSION["glpicookietest"] = 'testcookie';
 
-    //Try to detect GLPI agent calls
+    //Try to detect Zentra agent calls
     $rawdata = file_get_contents("php://input");
     if (!empty($rawdata) && $_SERVER['REQUEST_METHOD'] == 'POST') {
         include_once(GLPI_ROOT . '/front/inventory.php');
