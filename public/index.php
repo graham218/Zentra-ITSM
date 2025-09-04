@@ -1,43 +1,5 @@
 <?php
 
-/**
- * ---------------------------------------------------------------------
- *
- * Zentra - IT Asset & Service Management System
- *
- * http://zentra-project.org
- *
- * @copyright 2025 Zentra and contributors.
- * @licence   https://www.gnu.org/licenses/gpl-3.0.html
- *
- * ---------------------------------------------------------------------
- *
- * LICENSE
- *
- * This file is part of Zentra, a customized distribution of GLPI.
- *
- * Zentra is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * Zentra is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program. If not, see <https://www.gnu.org/licenses/>.
- *
- * ---------------------------------------------------------------------
- */
-
-/**
- * Zentra web router.
- *
- * This router is used to be able to expose only the `/public` directory on the webserver.
- */
-
 $glpi_root  = realpath(dirname(__FILE__, 2));
 
 if (preg_match('/^\/public/', $_SERVER['REQUEST_URI']) !== 1 && $_SERVER['SCRIPT_NAME'] === '/public/index.php') {
