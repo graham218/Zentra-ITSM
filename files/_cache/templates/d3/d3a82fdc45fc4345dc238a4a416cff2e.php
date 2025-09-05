@@ -34,23 +34,20 @@ class __TwigTemplate_020d930b00b5d2f8feac3190ae98ae09 extends Template
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 32
-        yield "
-";
-        // line 33
+        // line 1
         if ((($this->extensions['Glpi\Application\View\Extension\SessionExtension']->getCurrentInterface() == "central") && $this->extensions['Glpi\Application\View\Extension\ConfigExtension']->config("allow_search_global"))) {
-            // line 34
+            // line 2
             yield "<form action=\"";
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path("front/search.php"), "html", null, true);
             yield "\" role=\"search\" method=\"get\" data-submit-once>
    <div class=\"input-group input-group-flat\">
       <input type=\"text\" class=\"form-control\" name=\"globalsearch\" placeholder=\"";
-            // line 36
+            // line 4
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Search…"), "html", null, true);
             yield "\" />
       <span class=\"input-group-text\">
          <button type=\"submit\" class=\"btn btn-link p-0 m-0\" title=\"";
-            // line 38
+            // line 6
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Search…"), "html", null, true);
             yield "\">
             <span class=\"ti ti-search\" aria-hidden=\"true\"></span>
@@ -84,7 +81,7 @@ class __TwigTemplate_020d930b00b5d2f8feac3190ae98ae09 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  54 => 38,  49 => 36,  43 => 34,  41 => 33,  38 => 32,);
+        return array (  51 => 6,  46 => 4,  40 => 2,  38 => 1,);
     }
 
     public function getSourceContext()

@@ -34,71 +34,68 @@ class __TwigTemplate_dc826fc6992c37f7d27fdfe613f4a65e extends Template
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 32
-        yield "
-";
-        // line 33
+        // line 1
         $context["rand_header"] = Twig\Extension\CoreExtension::random($this->env->getCharset());
-        // line 34
+        // line 2
         yield "
 <div class=\"btn-group\">
    ";
-        // line 36
+        // line 4
         if ( !(null === ($context["user"] ?? null))) {
-            // line 37
+            // line 5
             yield "      <div class=\"navbar-nav flex-row order-md-last user-menu\">
          <div class=\"nav-item dropdown\">
             <a href=\"#\" class=\"nav-link d-flex lh-1 text-reset p-1 dropdown-toggle user-menu-dropdown-toggle ";
-            // line 39
+            // line 7
             if (($context["is_debug_active"] ?? null)) {
                 yield "bg-red-lt";
             }
             yield "\"
                data-bs-toggle=\"dropdown\" data-bs-auto-close=\"outside\">
                ";
-            // line 41
+            // line 9
             if ( !($context["anonymous"] ?? null)) {
-                // line 42
+                // line 10
                 yield "                  <div class=\"pe-2 d-none d-xl-block\">
                      <div>";
-                // line 43
-                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Twig\Extra\String\StringExtension']->createUnicodeString($this->extensions['Glpi\Application\View\Extension\DataHelpersExtension']->getVerbatimValue((((CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile"), "name", [], "array", true, true, false, 43) &&  !(null === (($__internal_compile_0 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0["name"] ?? null) : null)))) ? ((($__internal_compile_1 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1["name"] ?? null) : null)) : ("")))), "truncate", [35, "..."], "method", false, false, false, 43), "html", null, true);
+                // line 11
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Twig\Extra\String\StringExtension']->createUnicodeString($this->extensions['Glpi\Application\View\Extension\DataHelpersExtension']->getVerbatimValue((((CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile"), "name", [], "array", true, true, false, 11) &&  !(null === (($__internal_compile_0 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0["name"] ?? null) : null)))) ? ((($__internal_compile_1 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1["name"] ?? null) : null)) : ("")))), "truncate", [35, "..."], "method", false, false, false, 11), "html", null, true);
                 yield "</div>
                      ";
-                // line 44
+                // line 12
                 $context["entity_completename"] = $this->extensions['Glpi\Application\View\Extension\DataHelpersExtension']->getVerbatimValue($this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactive_entity_name"));
-                // line 45
+                // line 13
                 yield "                     <div class=\"mt-1 small text-muted\" title=\"";
                 yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["entity_completename"] ?? null), "html", null, true);
                 yield "\"
                           data-bs-toggle=\"tooltip\" data-bs-placement=\"bottom\">
                         ";
-                // line 47
+                // line 15
                 yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\DataHelpersExtension']->truncateLeft(($context["entity_completename"] ?? null)), "html", null, true);
                 yield "
                      </div>
                   </div>
 
                   ";
-                // line 51
-                yield Twig\Extension\CoreExtension::include($this->env, $context, "components/user/picture.html.twig", ["users_id" => (($__internal_compile_2 = CoreExtension::getAttribute($this->env, $this->source,                 // line 52
-($context["user"] ?? null), "fields", [], "any", false, false, false, 52)) && is_array($__internal_compile_2) || $__internal_compile_2 instanceof ArrayAccess ? ($__internal_compile_2["id"] ?? null) : null), "with_link" => false, "avatar_size" => ""]);
-                // line 55
+                // line 19
+                yield Twig\Extension\CoreExtension::include($this->env, $context, "components/user/picture.html.twig", ["users_id" => (($__internal_compile_2 = CoreExtension::getAttribute($this->env, $this->source,                 // line 20
+($context["user"] ?? null), "fields", [], "any", false, false, false, 20)) && is_array($__internal_compile_2) || $__internal_compile_2 instanceof ArrayAccess ? ($__internal_compile_2["id"] ?? null) : null), "with_link" => false, "avatar_size" => ""]);
+                // line 23
                 yield "
                ";
             }
-            // line 57
+            // line 25
             yield "            </a>
             <div class=\"dropdown-menu dropdown-menu-end mt-1 dropdown-menu-arrow animate__animated animate__fadeInRight\">
                <h6 class=\"dropdown-header\">";
-            // line 59
+            // line 27
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\ItemtypeExtension']->getItemName(($context["user"] ?? null)), "html", null, true);
             yield "</h6>
 
                ";
-            // line 61
+            // line 29
             if ( !($context["anonymous"] ?? null)) {
-                // line 62
+                // line 30
                 yield "                  ";
                 yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/profile_selector.html.twig");
                 yield "
@@ -106,42 +103,42 @@ class __TwigTemplate_dc826fc6992c37f7d27fdfe613f4a65e extends Template
                   <div class=\"dropdown-divider\"></div>
 
                   ";
-                // line 66
+                // line 34
                 if ($this->extensions['Glpi\Application\View\Extension\SessionExtension']->hasItemtypeRight("Config", Twig\Extension\CoreExtension::constant("UPDATE"))) {
-                    // line 67
+                    // line 35
                     yield "                     <a href=\"";
                     yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path("/ajax/switchdebug.php"), "html", null, true);
                     yield "\"
                         class=\"dropdown-item ";
-                    // line 68
+                    // line 36
                     if (($context["is_debug_active"] ?? null)) {
                         yield "bg-red-lt";
                     }
                     yield "\"
                         title=\"";
-                    // line 69
+                    // line 37
                     yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Change mode"), "html", null, true);
                     yield "\">
                         <i class=\"ti fa-fw ti-bug debug\"></i>
                         ";
-                    // line 71
+                    // line 39
                     yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(((($context["is_debug_active"] ?? null)) ? (__("Debug mode enabled")) : (__("Debug mode disabled"))), "html", null, true);
                     yield "
                      </a>
                   ";
                 }
-                // line 74
+                // line 42
                 yield "               ";
             }
-            // line 75
+            // line 43
             yield "
                ";
-            // line 77
+            // line 45
             yield "
                <div class=\"dropdown-item\">
                   <i class=\"ti fa-fw ti-language\"></i>
                   ";
-            // line 80
+            // line 48
             yield $this->extensions['Glpi\Application\View\Extension\PhpExtension']->call("User::showSwitchLangForm");
             yield "
                </div>
@@ -149,66 +146,66 @@ class __TwigTemplate_dc826fc6992c37f7d27fdfe613f4a65e extends Template
                <div class=\"dropdown-divider\"></div>
 
                <a href=\"";
-            // line 85
+            // line 53
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["help_url"] ?? null), "html", null, true);
             yield "\" class=\"dropdown-item\" title=\"";
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Help"), "html", null, true);
             yield "\">
                   <i class=\"ti fa-fw ti-help\"></i>
                   ";
-            // line 87
+            // line 55
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Help"), "html", null, true);
             yield "
                </a>
 
                <a href=\"#\" class=\"dropdown-item\" title=\"";
-            // line 90
+            // line 58
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("About"), "html", null, true);
             yield "\"
                   id=\"show_about_modal_";
-            // line 91
+            // line 59
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand_header"] ?? null), "html", null, true);
             yield "\">
                   <i class=\"ti fa-fw ti-info-circle\"></i>
                   ";
-            // line 93
+            // line 61
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("About"), "html", null, true);
             yield "
                   ";
-            // line 94
+            // line 62
             if ( !(null === ($context["founded_new_version"] ?? null))) {
-                // line 95
+                // line 63
                 yield "                     <span class=\"badge bg-info text-dark ms-2\">
                         1
                      </span>
                   ";
             }
-            // line 99
+            // line 67
             yield "               </a>
 
                <div class=\"dropdown-divider\"></div>
 
                <a href=\"";
-            // line 103
+            // line 71
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path("/front/preference.php"), "html", null, true);
             yield "\" class=\"dropdown-item\" title=\"";
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("My settings"), "html", null, true);
             yield "\">
                   <i class=\"ti fa-fw ti-adjustments-alt\"></i>
                   ";
-            // line 105
+            // line 73
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("My settings"), "html", null, true);
             yield "
                </a>
                <a href=\"";
-            // line 107
+            // line 75
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path(("/front/logout.php" . (((($this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiextauth")) ?: (false))) ? ("?noAUTO=1") : ("")))), "html", null, true);
             yield "\" class=\"dropdown-item\" title=\"";
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Logout"), "html", null, true);
             yield "\">
                   <i class=\"ti fa-fw ti-logout\"></i>
                   ";
-            // line 109
+            // line 77
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Logout"), "html", null, true);
             yield "
                </a>
@@ -217,44 +214,44 @@ class __TwigTemplate_dc826fc6992c37f7d27fdfe613f4a65e extends Template
       </div>
 
       <div class=\"modal fade\" id=\"about_modal_";
-            // line 115
+            // line 83
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand_header"] ?? null), "html", null, true);
             yield "\" role=\"dialog\">
          <div class=\"modal-dialog\">
             <div class=\"modal-content\">
                <div class=\"modal-header\">
                   <h4 class=\"modal-title\">";
-            // line 119
+            // line 87
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("About"), "html", null, true);
             yield "</h4>
                   <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"";
-            // line 120
+            // line 88
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Close"), "html", null, true);
             yield "\"></button>
                </div>
                <div class=\"modal-body\">
                   <p><a href=\"http://glpi-project.org/\" title=\"Powered by Teclib and contributors\" class=\"copyright\">
                      GLPI ";
-            // line 124
+            // line 92
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::constant("GLPI_VERSION"), "html", null, true);
             yield "
                      Copyright (C) 2015-";
-            // line 125
+            // line 93
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::constant("GLPI_YEAR"), "html", null, true);
             yield " Teclib' and contributors
                   </a></p>
                   ";
-            // line 127
+            // line 95
             if ( !(null === ($context["founded_new_version"] ?? null))) {
-                // line 128
+                // line 96
                 yield "                     <p>
                         <a href=\"http://www.glpi-project.org\" target=\"_blank\"
                            title=\"";
-                // line 130
+                // line 98
                 yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("You will find it on the GLPI-PROJECT.org site."), "html", null, true);
                 yield "\">
                            ";
-                // line 131
+                // line 99
                 yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::sprintf(__("A new version is available: %s."), ($context["founded_new_version"] ?? null)), "html", null, true);
                 yield "
                            <span class=\"badge bg-info text-dark\">
@@ -264,7 +261,7 @@ class __TwigTemplate_dc826fc6992c37f7d27fdfe613f4a65e extends Template
                      </p>
                   ";
             }
-            // line 138
+            // line 106
             yield "               </div>
             </div>
          </div>
@@ -272,29 +269,29 @@ class __TwigTemplate_dc826fc6992c37f7d27fdfe613f4a65e extends Template
 
    ";
         } elseif (Twig\Extension\CoreExtension::constant("GLPI_DEMO_MODE")) {
-            // line 144
+            // line 112
             yield "      <div class=\"dropdown-item\">
          <i class=\"fas fa-fw fa-language\"></i>
          ";
-            // line 146
+            // line 114
             yield $this->extensions['Glpi\Application\View\Extension\PhpExtension']->call("User::showSwitchLangForm");
             yield "
       </div>
 
    ";
         }
-        // line 150
+        // line 118
         yield "</div>
 
 <script type=\"text/javascript\">
 \$(function() {
    \$(\"#show_about_modal_";
-        // line 154
+        // line 122
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand_header"] ?? null), "html", null, true);
         yield "\").click(function(e) {
       e.preventDefault();
       \$(\"#about_modal_";
-        // line 156
+        // line 124
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand_header"] ?? null), "html", null, true);
         yield "\").remove().modal(\"show\");
    });
@@ -325,7 +322,7 @@ class __TwigTemplate_dc826fc6992c37f7d27fdfe613f4a65e extends Template
      */
     public function getDebugInfo()
     {
-        return array (  298 => 156,  293 => 154,  287 => 150,  280 => 146,  276 => 144,  268 => 138,  258 => 131,  254 => 130,  250 => 128,  248 => 127,  243 => 125,  239 => 124,  232 => 120,  228 => 119,  221 => 115,  212 => 109,  205 => 107,  200 => 105,  193 => 103,  187 => 99,  181 => 95,  179 => 94,  175 => 93,  170 => 91,  166 => 90,  160 => 87,  153 => 85,  145 => 80,  140 => 77,  137 => 75,  134 => 74,  128 => 71,  123 => 69,  117 => 68,  112 => 67,  110 => 66,  102 => 62,  100 => 61,  95 => 59,  91 => 57,  87 => 55,  85 => 52,  84 => 51,  77 => 47,  71 => 45,  69 => 44,  65 => 43,  62 => 42,  60 => 41,  53 => 39,  49 => 37,  47 => 36,  43 => 34,  41 => 33,  38 => 32,);
+        return array (  295 => 124,  290 => 122,  284 => 118,  277 => 114,  273 => 112,  265 => 106,  255 => 99,  251 => 98,  247 => 96,  245 => 95,  240 => 93,  236 => 92,  229 => 88,  225 => 87,  218 => 83,  209 => 77,  202 => 75,  197 => 73,  190 => 71,  184 => 67,  178 => 63,  176 => 62,  172 => 61,  167 => 59,  163 => 58,  157 => 55,  150 => 53,  142 => 48,  137 => 45,  134 => 43,  131 => 42,  125 => 39,  120 => 37,  114 => 36,  109 => 35,  107 => 34,  99 => 30,  97 => 29,  92 => 27,  88 => 25,  84 => 23,  82 => 20,  81 => 19,  74 => 15,  68 => 13,  66 => 12,  62 => 11,  59 => 10,  57 => 9,  50 => 7,  46 => 5,  44 => 4,  40 => 2,  38 => 1,);
     }
 
     public function getSourceContext()

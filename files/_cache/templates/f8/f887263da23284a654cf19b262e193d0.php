@@ -34,39 +34,36 @@ class __TwigTemplate_4b94561be2bf9fece74d25799d1cc4ae extends Template
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 32
-        yield "
-";
-        // line 33
+        // line 1
         if (($this->extensions['Glpi\Application\View\Extension\SessionExtension']->getCurrentInterface() == "central")) {
-            // line 34
+            // line 2
             yield "    ";
             $context["shortcut"] = __("Ctrl+Alt+G");
-            // line 35
+            // line 3
             yield "    ";
             if ((($context["platform"] ?? null) == Twig\Extension\CoreExtension::constant("donatj\\UserAgent\\Platforms::MACINTOSH"))) {
-                // line 36
+                // line 4
                 yield "        ";
                 $context["shortcut"] = __("Option+Command+G");
-                // line 37
+                // line 5
                 yield "    ";
             }
-            // line 38
+            // line 6
             yield "
    <button class=\"btn btn-icon btn-sm btn-ghost-secondary trigger-fuzzy justify-content-start mb-md-2 ps-1\"
            title=\"";
-            // line 40
+            // line 8
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["shortcut"] ?? null), "html", null, true);
             yield "\"
            data-bs-toggle=\"tooltip\"
            data-bs-placement=\"right\">
       <i class=\"ti ti-arrow-big-right me-1\"></i>
       <span class=\"menu-label ";
-            // line 44
+            // line 12
             yield (( !($context["is_vertical"] ?? null)) ? ("d-block d-xl-none d-xxl-block") : (""));
             yield "\">
          ";
-            // line 45
+            // line 13
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Find menu"), "html", null, true);
             yield "
       </span>
@@ -97,7 +94,7 @@ class __TwigTemplate_4b94561be2bf9fece74d25799d1cc4ae extends Template
      */
     public function getDebugInfo()
     {
-        return array (  70 => 45,  66 => 44,  59 => 40,  55 => 38,  52 => 37,  49 => 36,  46 => 35,  43 => 34,  41 => 33,  38 => 32,);
+        return array (  67 => 13,  63 => 12,  56 => 8,  52 => 6,  49 => 5,  46 => 4,  43 => 3,  40 => 2,  38 => 1,);
     }
 
     public function getSourceContext()

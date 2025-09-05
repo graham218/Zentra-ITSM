@@ -34,20 +34,17 @@ class __TwigTemplate_34f06de795f4b3e4267d193fa6e75beb extends Template
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 32
-        yield "
-";
-        // line 33
+        // line 1
         $context["anonymous"] = (null === $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile"));
-        // line 34
+        // line 2
         yield "
 ";
-        // line 35
+        // line 3
         $context["is_vertical"] = ($this->extensions['Glpi\Application\View\Extension\SessionExtension']->userPref("page_layout") == "vertical");
-        // line 36
+        // line 4
         yield "
 <body class=\"";
-        // line 37
+        // line 5
         yield ((($this->extensions['Glpi\Application\View\Extension\SessionExtension']->userPref("fold_menu") && ($context["is_vertical"] ?? null))) ? ("navbar-collapsed") : (""));
         yield " ";
         yield ((($context["is_vertical"] ?? null)) ? ("vertical-layout") : ("horizontal-layout"));
@@ -55,32 +52,32 @@ class __TwigTemplate_34f06de795f4b3e4267d193fa6e75beb extends Template
         yield ((($context["is_debug_active"] ?? null)) ? ("debug-active") : (""));
         yield "\">
    ";
-        // line 38
+        // line 6
         if ((Twig\Extension\CoreExtension::constantIsDefined("SKIP_UPDATES") && ($this->extensions['Glpi\Application\View\Extension\PhpExtension']->call("Update::isDbUpToDate") == false))) {
-            // line 39
+            // line 7
             yield "      <div class=\"banner-need-update\">
          ";
-            // line 40
+            // line 8
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("You are bypassing a needed update"), "html", null, true);
             yield "
       </div>
    ";
         }
-        // line 43
+        // line 11
         yield "   ";
         yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/impersonate_banner.html.twig");
         yield "
    ";
-        // line 44
+        // line 12
         yield Twig\Extension\CoreExtension::include($this->env, $context, "components/messages_after_redirect_toasts.html.twig", ["display_container" => true]);
         yield "
 
    <div class=\"page\">
 
       ";
-        // line 48
+        // line 16
         if (($context["is_vertical"] ?? null)) {
-            // line 49
+            // line 17
             yield "      <aside class=\"navbar navbar-vertical navbar-expand-lg sticky-lg-top sidebar\">
          <div class=\"container-fluid\">
             <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar-menu\">
@@ -88,7 +85,7 @@ class __TwigTemplate_34f06de795f4b3e4267d193fa6e75beb extends Template
             </button>
 
             <a href=\"";
-            // line 55
+            // line 23
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->indexPath(), "html", null, true);
             yield "\" accesskey=\"1\" title=\"";
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Home"), "html", null, true);
@@ -98,59 +95,59 @@ class __TwigTemplate_34f06de795f4b3e4267d193fa6e75beb extends Template
             </a>
 
             ";
-            // line 60
+            // line 28
             if ( !($context["anonymous"] ?? null)) {
-                // line 61
+                // line 29
                 yield "               <span class=\"d-none d-lg-inline-block\">
                    ";
-                // line 62
+                // line 30
                 yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/goto_button.html.twig");
                 yield "
                </span>
             ";
             }
-            // line 65
+            // line 33
             yield "
             ";
-            // line 66
+            // line 34
             if ( !(null === ($context["user"] ?? null))) {
-                // line 67
+                // line 35
                 yield "               ";
-                // line 68
+                // line 36
                 yield "               <div class=\"d-lg-none\">
                   ";
-                // line 69
+                // line 37
                 yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/user_header.html.twig");
                 yield "
                </div>
             ";
             }
-            // line 72
+            // line 40
             yield "
             ";
-            // line 73
+            // line 41
             if ( !($context["anonymous"] ?? null)) {
-                // line 74
+                // line 42
                 yield "               <div class=\"collapse navbar-collapse\" id=\"navbar-menu\">
                    <span class=\"d-inline-block d-lg-none ms-2\">
                        ";
-                // line 76
+                // line 44
                 yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/goto_button.html.twig");
                 yield "
                    </span>
                    ";
-                // line 78
+                // line 46
                 yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/menu.html.twig");
                 yield "
 
 
                   <p class=\"text-start\">
                      <button class=\"btn btn-sm btn-ghost-secondary  ";
-                // line 82
+                // line 50
                 yield ((($context["is_debug_active"] ?? null)) ? ("mb-4") : ("mb-2"));
                 yield " reduce-menu d-none d-md-block\">
                         <span class=\"menu-label\">";
-                // line 83
+                // line 51
                 yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Collapse menu"), "html", null, true);
                 yield "</span>
                      </button>
@@ -158,42 +155,42 @@ class __TwigTemplate_34f06de795f4b3e4267d193fa6e75beb extends Template
                </div>
             ";
             }
-            // line 88
+            // line 56
             yield "         </div>
       </aside>
       ";
         }
-        // line 91
+        // line 59
         yield "
       <header class=\"navbar d-print-none sticky-lg-top shadow-sm ";
-        // line 92
+        // line 60
         yield ((($this->extensions['Glpi\Application\View\Extension\SessionExtension']->userPref("page_layout") == "vertical")) ? ("navbar-light navbar-expand-md") : ("navbar-dark navbar-expand-xl topbar"));
         yield "\">
          <div class=\"container-fluid flex-xl-nowrap pe-xl-0\">
             ";
-        // line 94
+        // line 62
         if (($this->extensions['Glpi\Application\View\Extension\SessionExtension']->userPref("page_layout") == "vertical")) {
-            // line 95
+            // line 63
             yield "               ";
             yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/breadcrumbs.html.twig");
             yield "
 
                 <div class=\"ms-lg-auto d-none d-lg-block flex-grow-1 flex-lg-grow-0\">
                      ";
-            // line 98
+            // line 66
             yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/global_search_form.html.twig");
             yield "
                 </div>
 
             ";
         } elseif (($this->extensions['Glpi\Application\View\Extension\SessionExtension']->userPref("page_layout") == "horizontal")) {
-            // line 102
+            // line 70
             yield "               <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar-menu\">
                   <span class=\"navbar-toggler-icon\"></span>
                </button>
 
                <a href=\"";
-            // line 106
+            // line 74
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->indexPath(), "html", null, true);
             yield "\" accesskey=\"1\" title=\"";
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Home"), "html", null, true);
@@ -204,30 +201,30 @@ class __TwigTemplate_34f06de795f4b3e4267d193fa6e75beb extends Template
 
                <div class=\"d-lg-none\">
                   ";
-            // line 112
+            // line 80
             yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/user_header.html.twig");
             yield "
                </div>
 
                <div class=\"collapse navbar-collapse justify-content-center\" id=\"navbar-menu\">
                   ";
-            // line 116
+            // line 84
             yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/menu.html.twig");
             yield "
                   <span class=\"ms-xl-2 d-inline-block mt-2 mt-xl-2\">
                      ";
-            // line 118
+            // line 86
             yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/goto_button.html.twig");
             yield "
                   </span>
                </div>
             ";
         }
-        // line 122
+        // line 90
         yield "
             <div class=\"ms-md-4 d-none d-lg-block\">
                ";
-        // line 124
+        // line 92
         yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/user_header.html.twig");
         yield "
             </div>
@@ -235,18 +232,18 @@ class __TwigTemplate_34f06de795f4b3e4267d193fa6e75beb extends Template
       </header>
 
       ";
-        // line 129
+        // line 97
         if (($this->extensions['Glpi\Application\View\Extension\SessionExtension']->userPref("page_layout") == "horizontal")) {
-            // line 130
+            // line 98
             yield "      <div class=\"navbar navbar-expand-md navbar-light secondary-bar sticky-md-top shadow-sm\">
          <div class=\"container-fluid justify-content-start\">
             ";
-            // line 132
+            // line 100
             yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/breadcrumbs.html.twig");
             yield "
             <div class=\"ms-md-auto d-none d-md-block flex-grow-1 flex-md-grow-0\">
                 ";
-            // line 134
+            // line 102
             yield Twig\Extension\CoreExtension::include($this->env, $context, "layout/parts/global_search_form.html.twig");
             yield "
             </div>
@@ -254,7 +251,7 @@ class __TwigTemplate_34f06de795f4b3e4267d193fa6e75beb extends Template
       </div>
       ";
         }
-        // line 139
+        // line 107
         yield "
       <div class=\"page-wrapper mb-0\">
          <div class=\"page-body container-fluid\">
@@ -284,7 +281,7 @@ class __TwigTemplate_34f06de795f4b3e4267d193fa6e75beb extends Template
      */
     public function getDebugInfo()
     {
-        return array (  258 => 139,  250 => 134,  245 => 132,  241 => 130,  239 => 129,  231 => 124,  227 => 122,  220 => 118,  215 => 116,  208 => 112,  197 => 106,  191 => 102,  184 => 98,  177 => 95,  175 => 94,  170 => 92,  167 => 91,  162 => 88,  154 => 83,  150 => 82,  143 => 78,  138 => 76,  134 => 74,  132 => 73,  129 => 72,  123 => 69,  120 => 68,  118 => 67,  116 => 66,  113 => 65,  107 => 62,  104 => 61,  102 => 60,  92 => 55,  84 => 49,  82 => 48,  75 => 44,  70 => 43,  64 => 40,  61 => 39,  59 => 38,  51 => 37,  48 => 36,  46 => 35,  43 => 34,  41 => 33,  38 => 32,);
+        return array (  255 => 107,  247 => 102,  242 => 100,  238 => 98,  236 => 97,  228 => 92,  224 => 90,  217 => 86,  212 => 84,  205 => 80,  194 => 74,  188 => 70,  181 => 66,  174 => 63,  172 => 62,  167 => 60,  164 => 59,  159 => 56,  151 => 51,  147 => 50,  140 => 46,  135 => 44,  131 => 42,  129 => 41,  126 => 40,  120 => 37,  117 => 36,  115 => 35,  113 => 34,  110 => 33,  104 => 30,  101 => 29,  99 => 28,  89 => 23,  81 => 17,  79 => 16,  72 => 12,  67 => 11,  61 => 8,  58 => 7,  56 => 6,  48 => 5,  45 => 4,  43 => 3,  40 => 2,  38 => 1,);
     }
 
     public function getSourceContext()

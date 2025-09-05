@@ -34,34 +34,31 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 32
-        yield "
-";
-        // line 33
+        // line 1
         $context["rand"] = Twig\Extension\CoreExtension::random($this->env->getCharset());
-        // line 34
+        // line 2
         yield "
 <div class=\"dropdown dropstart\">
     <button class=\"dropdown-item dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
         <i class=\"ti ti-user-check\"></i>
         ";
-        // line 38
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\DataHelpersExtension']->getVerbatimValue((((CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile"), "name", [], "array", true, true, false, 38) &&  !(null === (($__internal_compile_0 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0["name"] ?? null) : null)))) ? ((($__internal_compile_1 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1["name"] ?? null) : null)) : (""))), "html", null, true);
+        // line 6
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\DataHelpersExtension']->getVerbatimValue((((CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile"), "name", [], "array", true, true, false, 6) &&  !(null === (($__internal_compile_0 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0["name"] ?? null) : null)))) ? ((($__internal_compile_1 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1["name"] ?? null) : null)) : (""))), "html", null, true);
         yield "
     </button>
     <div class=\"dropdown-menu\" data-bs-popper=\"none\">
         <span class=\"dropdown-header\">";
-        // line 41
+        // line 9
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Profiles"), "html", null, true);
         yield "</span>
         ";
-        // line 42
+        // line 10
         $context['_parent'] = $context;
         $context['_seq'] = CoreExtension::ensureTraversable($this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiprofiles"));
         foreach ($context['_seq'] as $context["profile_id"] => $context["profile"]) {
-            // line 43
+            // line 11
             yield "            <a class=\"dropdown-item ";
-            yield ((($context["profile_id"] == (((CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile"), "id", [], "array", true, true, false, 43) &&  !(null === (($__internal_compile_2 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_2) || $__internal_compile_2 instanceof ArrayAccess ? ($__internal_compile_2["id"] ?? null) : null)))) ? ((($__internal_compile_3 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_3) || $__internal_compile_3 instanceof ArrayAccess ? ($__internal_compile_3["id"] ?? null) : null)) : (0)))) ? ("active") : (""));
+            yield ((($context["profile_id"] == (((CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile"), "id", [], "array", true, true, false, 11) &&  !(null === (($__internal_compile_2 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_2) || $__internal_compile_2 instanceof ArrayAccess ? ($__internal_compile_2["id"] ?? null) : null)))) ? ((($__internal_compile_3 = $this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactiveprofile")) && is_array($__internal_compile_3) || $__internal_compile_3 instanceof ArrayAccess ? ($__internal_compile_3["id"] ?? null) : null)) : (0)))) ? ("active") : (""));
             yield "\" href=\"";
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->indexPath(), "html", null, true);
             yield "?newprofile=";
@@ -69,7 +66,7 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
             yield "\">
                 <i class=\"ti ti-user-check\"></i>
                 ";
-            // line 45
+            // line 13
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\DataHelpersExtension']->getVerbatimValue((($__internal_compile_4 = $context["profile"]) && is_array($__internal_compile_4) || $__internal_compile_4 instanceof ArrayAccess ? ($__internal_compile_4["name"] ?? null) : null)), "html", null, true);
             yield "
             </a>
@@ -78,80 +75,80 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['profile_id'], $context['profile'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 48
+        // line 16
         yield "    </div>
 </div>
 
 ";
-        // line 51
+        // line 19
         $context["target"] = $this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path("front/central.php");
-        // line 52
+        // line 20
         if (($this->extensions['Glpi\Application\View\Extension\SessionExtension']->getCurrentInterface() == "helpdesk")) {
-            // line 53
+            // line 21
             yield "    ";
             $context["target"] = $this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path("front/helpdesk.public.php");
         }
-        // line 55
+        // line 23
         yield "
 ";
-        // line 56
+        // line 24
         $context["current_entity"] = $this->extensions['Glpi\Application\View\Extension\DataHelpersExtension']->getVerbatimValue($this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactive_entity_name"));
-        // line 57
+        // line 25
         $context["current_entity_short"] = $this->extensions['Glpi\Application\View\Extension\DataHelpersExtension']->getVerbatimValue($this->extensions['Glpi\Application\View\Extension\SessionExtension']->session("glpiactive_entity_shortname"));
-        // line 58
+        // line 26
         if ((($context["current_entity"] ?? null) != ($context["current_entity_short"] ?? null))) {
-            // line 59
+            // line 27
             yield "    ";
             $context["current_entity_short"] = ("... > " . ($context["current_entity_short"] ?? null));
         }
-        // line 61
+        // line 29
         if ( !Session::isMultiEntitiesMode()) {
-            // line 62
+            // line 30
             yield "    <span class=\"dropdown-item dropdown-item-text\" title=\"";
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["current_entity"] ?? null), "html", null, true);
             yield "\">
         <i class=\"fa-fw ti ti-stack\"></i>
         ";
-            // line 64
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Twig\Extra\String\StringExtension']->createUnicodeString(($context["current_entity_short"] ?? null)), "truncate", [35, "..."], "method", false, false, false, 64), "html", null, true);
+            // line 32
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Twig\Extra\String\StringExtension']->createUnicodeString(($context["current_entity_short"] ?? null)), "truncate", [35, "..."], "method", false, false, false, 32), "html", null, true);
             yield "
     </span>
 ";
         } else {
-            // line 67
+            // line 35
             yield "    <div class=\"dropdown dropstart\" id=\"entity-tree-dropdown-";
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "\">
         <a href=\"#\" class=\"dropdown-item dropdown-toggle entity-dropdown-toggle\" data-bs-toggle=\"dropdown\" data-bs-auto-close=\"outside\" title=\"";
-            // line 68
+            // line 36
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["current_entity"] ?? null), "html", null, true);
             yield "\">
             <i class=\"fa-fw ti ti-stack\"></i>
             ";
-            // line 70
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Twig\Extra\String\StringExtension']->createUnicodeString(($context["current_entity_short"] ?? null)), "truncate", [35, "..."], "method", false, false, false, 70), "html", null, true);
+            // line 38
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $this->extensions['Twig\Extra\String\StringExtension']->createUnicodeString(($context["current_entity_short"] ?? null)), "truncate", [35, "..."], "method", false, false, false, 38), "html", null, true);
             yield "
         </a>
         <div class=\"dropdown-menu p-3\">
             <h3>";
-            // line 73
+            // line 41
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Select the desired entity"), "html", null, true);
             yield "</h3>
 
             <div class=\"alert alert-info\" role=\"alert\">
                 ";
-            // line 76
+            // line 44
             $context["shortcut"] = __("Ctrl + Alt + E");
-            // line 77
+            // line 45
             yield "                ";
             if ((($context["platform"] ?? null) == Twig\Extension\CoreExtension::constant("donatj\\UserAgent\\Platforms::MACINTOSH"))) {
-                // line 78
+                // line 46
                 yield "                    ";
                 $context["shortcut"] = __("⌥ (option) + ⌘ (command) + E");
-                // line 79
+                // line 47
                 yield "                ";
             }
-            // line 80
+            // line 48
             yield "                ";
             yield Twig\Extension\CoreExtension::sprintf(__("Tip: You can call this modal with %s keys combination"), (("<kbd>" . ($context["shortcut"] ?? null)) . "</kbd>"));
             yield "
@@ -160,16 +157,16 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
                 <i class=\"fas fa-info-circle\"></i>
                 <span class=\"ms-2\">
                 ";
-            // line 85
+            // line 53
             $context["recursive_icon"] = ('' === $tmp = \Twig\Extension\CoreExtension::captureOutput((function () use (&$context, $macros, $blocks) {
-                // line 86
+                // line 54
                 yield "                    <i class=\"fas fa-angle-double-down\" title=\"";
                 yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("+ sub-entities"), "html", null, true);
                 yield "\"></i>
                 ";
                 return; yield '';
             })())) ? '' : new Markup($tmp, $this->env->getCharset());
-            // line 88
+            // line 56
             yield "                ";
             yield Twig\Extension\CoreExtension::sprintf(__("Click on the %s icon to load the elements of the selected entity, as well as its sub-entities."), ($context["recursive_icon"] ?? null));
             yield "
@@ -177,41 +174,41 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
             </div>
 
             <form id=\"entsearchform";
-            // line 92
+            // line 60
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "\">
                 <div class=\"input-group\">
                 <input type=\"text\" class=\"form-control\" name=\"entsearchtext\" id=\"entsearchtext";
-            // line 94
+            // line 62
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "\"
                         placeholder=\"";
-            // line 95
+            // line 63
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Search entity"), "html", null, true);
             yield "\" autocomplete=\"off\">
                 <button type=\"submit\" class=\"btn btn-icon btn-primary\" title=\"";
-            // line 96
+            // line 64
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Search"), "html", null, true);
             yield "\"
                         data-bs-toggle=\"tooltip\" data-bs-placement=\"top\">
                     <i class=\"ti ti-search\"></i>
                 </button>
                 <a class=\"btn btn-icon btn-outline-secondary\" href=\"#\" id=\"entsearchtext";
-            // line 100
+            // line 68
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "_clear\"
                     title=\"";
-            // line 101
+            // line 69
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Clear search"), "html", null, true);
             yield "\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\">
                         <i class=\"ti ti-x\"></i>
                 </a>
                 <a href=\"";
-            // line 104
+            // line 72
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["target"] ?? null), "html", null, true);
             yield "?active_entity=all\" class=\"btn btn-secondary\"
                     title=\"";
-            // line 105
+            // line 73
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("Select all"), "html", null, true);
             yield "\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\">
                     <i class=\"ti ti-eye\"></i>
@@ -221,7 +218,7 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
 
             <div class=\"fancytree-grid-container flexbox-item-grow entity_tree\">
                 <table id=\"tree_entity";
-            // line 112
+            // line 80
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "\">
                 <colgroup>
@@ -236,7 +233,7 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
                 </tbody>
                 </table>
                 <div id=\"verticalScrollbar-";
-            // line 124
+            // line 92
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "\" style=\"height:100%;\"></div>
             </div>
@@ -246,18 +243,18 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
     <script type=\"text/javascript\">
     \$(function() {
         var initTree";
-            // line 131
+            // line 99
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield " = function() {
             if (\$.ui.fancytree.getTree(\"#tree_entity";
-            // line 132
+            // line 100
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "\") !== null) {
                 return;
             }
 
             \$('#tree_entity";
-            // line 136
+            // line 104
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "').fancytree({
                 // load plugins
@@ -297,7 +294,7 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
                 // load data by ajax
                 source: {
                     url:  '";
-            // line 173
+            // line 141
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Glpi\Application\View\Extension\RoutingExtension']->path("/ajax/entitytreesons.php"), "html", null, true);
             yield "',
                     cache: false
@@ -308,7 +305,7 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
                     mode: \"hide\", // remove unmatched nodes
                     autoExpand: true, // if results found in children, auto-expand parent
                     nodata: '";
-            // line 181
+            // line 149
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(__("No entity found"), "html", null, true);
             yield "', // message when no data found
                     highlight: false, // do not highlight matches by wrapping inside tags (when true, this strip the a tag)
@@ -329,7 +326,7 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
                         });
                     },
                     scrollbarElement: document.getElementById(\"verticalScrollbar-";
-            // line 199
+            // line 167
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "\"),
                     });
@@ -357,29 +354,29 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
 
       // init Entities tree only when user ask for it (when dropdown is opened)
         document.getElementById('entity-tree-dropdown-";
-            // line 224
+            // line 192
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "')
             .addEventListener('show.bs.dropdown', function (event) {
                 initTree";
-            // line 226
+            // line 194
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "();
             });
 
         var searchTree = function() {
             var search_text = \$(\"#entsearchtext";
-            // line 230
+            // line 198
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "\").val();
             \$.ui.fancytree.getTree(\"#tree_entity";
-            // line 231
+            // line 199
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "\").filterBranches(search_text);
         }
 
         \$('#entsearchform";
-            // line 234
+            // line 202
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "').submit(function(event) {
             // cancel submit of entity search form
@@ -389,7 +386,7 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
         });
 
         \$('#entsearchtext";
-            // line 241
+            // line 209
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "').keyup(function () {
             var inputsearch = \$(this);
@@ -401,11 +398,11 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
         }).focus();
 
         \$('#entsearchtext";
-            // line 250
+            // line 218
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "_clear').click(function () {
             \$('#entsearchtext";
-            // line 251
+            // line 219
             yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(($context["rand"] ?? null), "html", null, true);
             yield "').val('');
             searchTree();
@@ -448,7 +445,7 @@ class __TwigTemplate_62865fc775393ca6034b5902fda238f4 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  409 => 251,  405 => 250,  393 => 241,  383 => 234,  377 => 231,  373 => 230,  366 => 226,  361 => 224,  333 => 199,  312 => 181,  301 => 173,  261 => 136,  254 => 132,  250 => 131,  240 => 124,  225 => 112,  215 => 105,  211 => 104,  205 => 101,  201 => 100,  194 => 96,  190 => 95,  186 => 94,  181 => 92,  173 => 88,  166 => 86,  164 => 85,  155 => 80,  152 => 79,  149 => 78,  146 => 77,  144 => 76,  138 => 73,  132 => 70,  127 => 68,  122 => 67,  116 => 64,  110 => 62,  108 => 61,  104 => 59,  102 => 58,  100 => 57,  98 => 56,  95 => 55,  91 => 53,  89 => 52,  87 => 51,  82 => 48,  73 => 45,  63 => 43,  59 => 42,  55 => 41,  49 => 38,  43 => 34,  41 => 33,  38 => 32,);
+        return array (  406 => 219,  402 => 218,  390 => 209,  380 => 202,  374 => 199,  370 => 198,  363 => 194,  358 => 192,  330 => 167,  309 => 149,  298 => 141,  258 => 104,  251 => 100,  247 => 99,  237 => 92,  222 => 80,  212 => 73,  208 => 72,  202 => 69,  198 => 68,  191 => 64,  187 => 63,  183 => 62,  178 => 60,  170 => 56,  163 => 54,  161 => 53,  152 => 48,  149 => 47,  146 => 46,  143 => 45,  141 => 44,  135 => 41,  129 => 38,  124 => 36,  119 => 35,  113 => 32,  107 => 30,  105 => 29,  101 => 27,  99 => 26,  97 => 25,  95 => 24,  92 => 23,  88 => 21,  86 => 20,  84 => 19,  79 => 16,  70 => 13,  60 => 11,  56 => 10,  52 => 9,  46 => 6,  40 => 2,  38 => 1,);
     }
 
     public function getSourceContext()
